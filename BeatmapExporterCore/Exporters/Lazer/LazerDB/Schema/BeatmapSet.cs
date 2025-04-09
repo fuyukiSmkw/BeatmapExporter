@@ -24,7 +24,7 @@ namespace BeatmapExporterCore.Exporters.Lazer.LazerDB.Schema
         IList<Beatmap>? selected = null; // backing field for SelectedBeatmaps
 
         [Ignored]
-        public string BeatmapID => OnlineID != -1 ? $"{OnlineID} " : "";
+        public string BeatmapID => OnlineID != -1 ? $"{OnlineID}" : "";
 
         /// <summary>
         /// Collection containing only the beatmaps from this set which are currently selected by the user.
